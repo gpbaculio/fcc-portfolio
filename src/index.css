@@ -81,12 +81,83 @@ h5 {
   right: 0;
   background-image: url('./images/react_logo.svg');
   background-repeat: no-repeat;
-  background-position: 50% 300px;
-  background-size: 30% auto;
+  background-position: 50% 250px;
+  background-size: 50% auto;
   opacity: 0.1;
+}
+
+@media (max-width: 1280px) {
+  .about-container::before {
+    display: none;
+  }
+}
+
+.about-me-container {
+  border: 1px solid #d8d8d8;
+  padding: 15px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 .certificates-container {
   border: 1px solid #d8d8d8;
   height: 100%;
+  padding-top: 3em;
+}
+
+.certificates-container::after {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 0;
+  padding: 1em;
+  color: #aaa;
+  font-size: smaller;
+  font-weight: 500;
+  content: 'FREECODECAMP CERTIFICATIONS';
+}
+
+/* carousel */
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%235ED3F3' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%235ED3F3' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* make slider indicator and icons prev and next visible */
+.carousel-container {
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+/* push extra 50px so it's more visible just outside the carousel */
+.carousel-control-next,
+.carousel-control-prev {
+  width: 30px !important;
+}
+
+.carousel-indicators li {
+  background-color: #5ED3F3;
+}
+
+.data-link::after {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  width: .5rem;
+  height: .5rem;
+  margin: .125rem 0 0 .125rem;
+  background-size: .5rem .5rem;
+  pointer-events: none;
+  background-image: url('./images/go_to_link.svg');
 }
