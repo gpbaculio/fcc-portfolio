@@ -22,8 +22,8 @@ const About = () => {
               />
               <p className='text-justify about-pharagraph font-weight-light mb-0'>
                 I have a degree in Bachelor of Science Major in Information
-                Technology with concentration in Web Development. Developed my
-                frontend and backend skills in{' '}
+                Technology with concentration in Web Development. I further developed my
+                frontend and backend skills at{' '}
                 <a
                   className='data-link'
                   target='_blank'

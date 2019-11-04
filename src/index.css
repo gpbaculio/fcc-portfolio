@@ -105,10 +105,11 @@ h5 {
 .certificates-container {
   border: 1px solid #d8d8d8;
   height: 100%;
-  padding-top: 3em;
+  padding-top: 56px;
 }
 
-.certificates-container::after {
+.certificates-container::after,
+.projects-filter::after {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
@@ -118,9 +119,21 @@ h5 {
   top: 0;
   padding: 1em;
   color: #aaa;
-  font-size: smaller;
+  font-size: 16px;
   font-weight: 500;
+}
+
+.frontend-label,
+.backend-label {
+  font-weight: 500;
+}
+
+.certificates-container::after {
   content: 'FREECODECAMP CERTIFICATIONS';
+}
+
+.projects-filter::after {
+  content: 'FILTERS';
 }
 
 /* carousel */
@@ -160,4 +173,39 @@ h5 {
   background-size: .5rem .5rem;
   pointer-events: none;
   background-image: url('./images/go_to_link.svg');
+}
+
+.projects-filter {
+  background-color: #F2F2F2;
+  padding: 3em 1em 1em 1em;
+  border: solid #d8d8d8 1px;
+  width: 150px;
+}
+
+.projects-demo {
+  padding: 1em 1em 1em 1em;
+  border-top: solid #d8d8d8 1px;
+  border-right: solid #d8d8d8 1px;
+  border-bottom: solid #d8d8d8 1px;
+}
+
+.project-card-body {
+  border-top: 1px solid #d8d8d8;
+  background-color: #f9f9f9;
+}
+
+.project-link {
+  background: #5ED3F3;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  vertical-align: middle;
+  padding: 8px;
+  opacity: 0.8;
+}
+
+.project-link:hover {
+  opacity: 1;
 }
