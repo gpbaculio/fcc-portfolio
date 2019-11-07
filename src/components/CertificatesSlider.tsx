@@ -100,6 +100,8 @@ const CertificatesSlider = () => {
               <div className='product-item'>
                 <img width='100%' src={cert_data.src} alt='' />
                 <a
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='text-center my-2 d-block data-link'
                   href={cert_data.url}>
                   {cert_data.title}
@@ -113,11 +115,7 @@ const CertificatesSlider = () => {
   });
 
   return (
-    <Carousel
-      interval={false}
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}>
+    <Carousel activeIndex={activeIndex} next={next} previous={previous}>
       <CarouselIndicators
         items={certificates_data}
         activeIndex={activeIndex}

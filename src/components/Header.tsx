@@ -7,11 +7,7 @@ import {
   Collapse,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  NavLink
 } from 'reactstrap';
 
 const Header = () => {
@@ -21,19 +17,16 @@ const Header = () => {
   return (
     <header>
       <Container>
-        <Navbar expand='md'>
+        <Navbar expand='md' dark>
           <NavbarBrand href='/'>Glendon Philipp Baculio</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className='ml-auto' navbar>
               <NavItem>
-                <NavLink href='/components/'>ABOUT</NavLink>
+                <NavLink href='#about'>ABOUT</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href='/components/'>PROJECTS</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href='/components/'>CONTACT</NavLink>
+                <NavLink href='#projects'>PROJECTS</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
