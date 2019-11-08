@@ -119,7 +119,6 @@ const Projects = () => {
         chaiTesting,
         d3,
         react,
-        responsive,
         mongoose,
         express
       ],
@@ -521,12 +520,12 @@ const Projects = () => {
             xs='3'
             md='2'
             className='projects-filter position-relative d-flex flex-column flex-wrap'>
-            <Form>
+            <Form className='f-form'>
               <FormGroup>
                 <Label for='frontend_filters' className='frontend-label'>
                   Frontend
                 </Label>
-                <div>
+                <div className='w-100 fs-container'>
                   {frontendFilters.map(i => {
                     let label: string = i;
                     if (i.includes('typescript')) label = 'typescript';
@@ -535,7 +534,7 @@ const Projects = () => {
                       <CustomInput
                         name={i}
                         key={`checkbox-${i}`}
-                        className='m-1'
+                        className='m-1 d-flex flex-wrap f-input'
                         type='checkbox'
                         id={`${i}-checkbox`}
                         label={label}
@@ -548,7 +547,7 @@ const Projects = () => {
                 </div>
               </FormGroup>
             </Form>
-            <Form>
+            <Form className='f-form'>
               <FormGroup>
                 <Label for='backend_filters' className='backend-label'>
                   Backend
@@ -564,7 +563,7 @@ const Projects = () => {
                         checked={checkedItems[i]}
                         name={i}
                         onChange={handleChange}
-                        className='m-1'
+                        className='m-1 f-checkBox'
                         type='checkbox'
                         value={i}
                         id={`${i}-checkbox`}
