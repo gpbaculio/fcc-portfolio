@@ -228,6 +228,43 @@ h5 {
   }
 }
 
+@media (max-width: 576px) {
+  .projects-filter {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .f-input {
+    padding-left: 18px !important;
+  }
+
+  .custom-control-label {
+    word-wrap: break-word;
+    width: 100% !important;
+  }
+
+  .projects-demo {
+    gap: 10px;
+  }
+
+  .f-checkBox {
+    margin: 0 !important;
+  }
+}
+
+.f-form {
+  width: 100%;
+}
+
+.fs-container {
+  width: 100%;
+  word-wrap: break-word
+}
+
+.f-input {
+  word-wrap: break-word
+}
+
 .card {
   height: 100%;
 }
