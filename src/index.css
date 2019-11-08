@@ -254,6 +254,7 @@ h5 {
 
 .f-form {
   width: 100%;
+  word-wrap: break-word
 }
 
 .fs-container {
