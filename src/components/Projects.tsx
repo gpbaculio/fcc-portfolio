@@ -330,8 +330,8 @@ const Projects = () => {
       tags: [react, reactNative, css],
       src: img_project_9,
       features: ['search movies', 'view movie info'],
-      github: 'https://github.com/gpbaculio/cs50-reactnative-project3',
-      demo: 'https://snack.expo.io/@gpbaculio/auth-flow_crud-app'
+      github: 'https://snack.expo.io/@gpbaculio/movie-browser',
+      demo: 'https://snack.expo.io/@gpbaculio/movie-browser'
     },
     {
       title: 'FCC Tribute Page',
