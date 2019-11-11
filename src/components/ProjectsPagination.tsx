@@ -22,14 +22,15 @@ const ProjectsPagination = ({
   handPageClick,
   projectsPerPage
 }: ProjectsPaginationProps) => {
+  console.log('currentPage ', currentPage);
   const pageNumbers: number[] = [];
-  for (let i = 1; i <= Math.ceil(projects.length / projectsPerPage); i++) {
+  for (let i = 1; i <= Math.ceil(projects.length / projectsPerPage); i += 1) {
     pageNumbers.push(i);
   }
   return (
     <Pagination className='mt-auto mx-auto flex-wrap' size='lg'>
       <PaginationItem disabled={currentPage === pageNumbers[0]}>
-        <PaginationLink first onClick={() => handPageClick(1)} />
+        <PaginationLink first onClick={() => handPageClick(pageNumbers[0])} />
       </PaginationItem>
       <PaginationItem disabled={currentPage <= 1}>
         <PaginationLink

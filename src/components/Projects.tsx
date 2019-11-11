@@ -577,7 +577,7 @@ const Projects = () => {
           </Col>
           <Col xs='9' md='10' className='projects-demo-col d-flex flex-column'>
             <div className='projects-demo'>
-              {currentProjects.map(prj => {
+              {currentProjects.map((prj, idx) => {
                 const backendTags = prj.tags.filter(tg =>
                   backendFilters.includes(tg)
                 );
@@ -585,7 +585,9 @@ const Projects = () => {
                   frontendFilters.includes(tg)
                 );
                 return (
-                  <div key={prj.title} className='project-container'>
+                  <div
+                    key={`${prj.title}-${idx}`}
+                    className='project-container'>
                     <Card className='mx-auto'>
                       <div className='w-100 position-relative project-links-container'>
                         <CardImg
